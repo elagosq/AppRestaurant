@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_length_useremail">20</integer>
+    <integer name="max_length_userpass">20</integer>
+    <integer name="main_columns">1</integer>
+    <integer name="lines_url_photo">4</integer>
+</resources>

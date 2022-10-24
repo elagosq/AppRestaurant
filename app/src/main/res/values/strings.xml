@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">apprestaurant</string>
+    <string name="hint_useremail">Correo Electrónico</string>
+    <string name="helper_useremail">Requerido</string>
+    <string name="hint_userpass">Contraseña</string>
+    <string name="helper_userpass">requerido</string>
+    <string name="boton_text_sesion">Ingresar</string>
+    <string name="title_login">Bienvenido</string>
+    <string name="text_register">¿Ya tienes una cuenta?</string>
+    <string name="title_button_reg">Registro</string>
+    <string name="title_registro">Registrar Usuario</string>
+    <string name="boton_text_registro">Registrar</string>
+    <string name="description_restaurant_add">Crear Restaurante</string>
+    <string name="content_description_restaurant">Restaurante1</string>
+    <string name="title_restaurant1">Title</string>
+    <string name="description_restaurant1">Lorem ipsum dolor sit amet,consectetur adipiscingelit, sed do eiusmod tempor</string>
+    <string name="description_img_photo">Imagen del restaurante</string>
+
+    <string name="dialog_delete_title">¿Eliminar Restaurante?</string>
+    <string name="dialog_delete_confirm">Eliminar</string>
+    <string name="dialog_delete_cancel">Cancelar</string>
+    <string name="main_error_no_phone">Este restaurante no tiene un telefono</string>
+    <string name="main_error_no_resolver">No se encontró ninguna app compatible</string>
+    <string name="main_error_no_website">Este restaurante no cuenta con sitio web</string>
+
+    <string name="edit_restaurant_message_update_success">Resturante actualizado</string>
+    <string name="add_restaurant_message_save_success">Restaurante Agregada Correctamente.</string>
+
+    <string name="options_item_call">Llamar</string>
+    <string name="options_item_website">Ir al sitio web</string>
+    <string name="main_error_no_resolve">No se encontró ninguna app compatible</string>
+
+</resources>

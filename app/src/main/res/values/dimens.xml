@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_padding_min">8dp</dimen>
+    <dimen name="common_padding_default">16dp</dimen>
+    <dimen name="common_padding_middle">24dp</dimen>
+    <dimen name="logo_height">200dp</dimen>
+    <dimen name="title_login_size">36dp</dimen>
+    <dimen name="border_button_form">30</dimen>
+    <dimen name="item_card_height">200dp</dimen>
+    <dimen name="img_item_map_size">32dp</dimen>
+</resources>
