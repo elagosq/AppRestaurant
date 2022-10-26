@@ -34,6 +34,7 @@ class DetalleRestaurante : AppCompatActivity(),AdapterView.OnItemSelectedListene
 
         setSupportActionBar(mBinding.toolbar)
         getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
+        getSupportActionBar()?.setHomeAsUpIndicator(R.drawable.ic_arrow_back)
         getSupportActionBar()?.setTitle(titleRestaurant);
 
         mBinding.tvDirection.setText(dirRestaurant)
@@ -64,8 +65,7 @@ class DetalleRestaurante : AppCompatActivity(),AdapterView.OnItemSelectedListene
 
 
     private suspend fun dial(phone : String){
-        Log.i("Phone",phone)
-
+            Log.i("Phone",phone)
 
             val callIntent = Intent().apply{
                 action = Intent.ACTION_DIAL

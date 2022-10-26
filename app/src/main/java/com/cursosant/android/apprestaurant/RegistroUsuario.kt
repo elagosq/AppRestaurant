@@ -21,6 +21,7 @@ class RegistroUsuario : AppCompatActivity() {
         setContentView(mBinding.root)
         setSupportActionBar(mBinding.toolbar)
         getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
+        getSupportActionBar()?.setHomeAsUpIndicator(R.drawable.ic_arrow_back)
         getSupportActionBar()?.setTitle("");
 
         mUserEntity = UserEntity(email = "", password = "")
