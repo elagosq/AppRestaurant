@@ -23,13 +23,13 @@ class DetalleRestaurante : AppCompatActivity(),AdapterView.OnItemSelectedListene
         mBinding = ActivityDetalleRestauranteBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
-        val intent = getIntent()
-        val titleRestaurant = intent.getStringExtra("name").toString();
-        val phoneRestaurant = intent.getStringExtra("phone").toString()
-        val webRestaurant   = intent.getStringExtra("website").toString()
-        val dirRestaurant   = intent.getStringExtra("direction").toString()
-        val despRestaurant  = intent.getStringExtra("description").toString()
-        val checked = intent.getBooleanExtra("favorite",true)
+        val bundle = intent.extras
+        val titleRestaurant = bundle?.getString("name").toString();
+        val phoneRestaurant = bundle?.getString("phone").toString()
+        val webRestaurant   = bundle?.getString("website").toString()
+        val dirRestaurant   = bundle?.getString("direction").toString()
+        val despRestaurant  = bundle?.getString("description").toString()
+        val checked = bundle?.getBoolean("favorite",true)
         Log.i("checked","$checked")
 
         setSupportActionBar(mBinding.toolbar)
@@ -40,7 +40,7 @@ class DetalleRestaurante : AppCompatActivity(),AdapterView.OnItemSelectedListene
         mBinding.tvTel.setText(phoneRestaurant)
         mBinding.tvWeb.setText(webRestaurant)
         mBinding.tvDescription.setText(despRestaurant)
-        mBinding.cbFavorite.isChecked = checked
+        mBinding.cbFavorite.isChecked = checked!!
 
         mBinding.btnMenu.setOnClickListener {
             alertShowOption(phoneRestaurant,webRestaurant)
