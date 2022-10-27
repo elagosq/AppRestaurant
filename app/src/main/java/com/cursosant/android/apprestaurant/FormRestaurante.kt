@@ -38,7 +38,7 @@ class FormRestaurante : AppCompatActivity() {
         setSupportActionBar(mBinding.toolbar)
         getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
         getSupportActionBar()?.setTitle(if(mIsEditMode) "Editar Restaurante" else "Crear Restaurante");
-
+        getSupportActionBar()?.setHomeAsUpIndicator(R.drawable.ic_arrow_back)
         getSupportActionBar()?.setCustomView(R.layout.personalizado_logo)
         getSupportActionBar()?.setDisplayUseLogoEnabled(true)
 
