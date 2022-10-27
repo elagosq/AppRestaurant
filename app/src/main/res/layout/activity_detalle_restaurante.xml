@@ -139,8 +139,9 @@
        <com.google.android.material.button.MaterialButton
            android:id="@+id/btnMenu"
            android:layout_width="wrap_content"
+           android:text="Opciones"
+           app:icon="@drawable/ic_menu_open"
            android:layout_height="match_parent"
-           android:text="Menu"
            />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
