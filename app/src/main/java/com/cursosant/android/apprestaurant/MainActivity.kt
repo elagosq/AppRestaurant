@@ -1,18 +1,15 @@
 package com.cursosant.android.apprestaurant
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.cursosant.android.apprestaurant.databinding.ActivityMainBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.launch
 import roomDatabase.entity.RestaurantEntity
-import java.io.Serializable
 
 class MainActivity : AppCompatActivity(), OnClickListener {
 
@@ -26,17 +23,10 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
-        getSupportActionBar()?.setTitle("");
-        //getSupportActionBar()?.setLogo(R.drawable.icon)
-        getSupportActionBar()?.setCustomView(R.layout.personalizado_logo)
-        getSupportActionBar()?.setDisplayUseLogoEnabled(true)
-
 
         setupRecyclerView()
 
-
-       binding.fab.setOnClickListener {
+        binding.fab.setOnClickListener {
            val intent = Intent(this@MainActivity, FormRestaurante::class.java)
            startActivity(intent)
        }

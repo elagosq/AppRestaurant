@@ -6,26 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/ctToolbar"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:background="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        >
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-         />
-
-    </com.google.android.material.appbar.AppBarLayout>
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -39,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ctToolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
