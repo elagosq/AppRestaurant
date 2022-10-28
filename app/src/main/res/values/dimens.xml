@@ -11,4 +11,7 @@
     <dimen name="splash_logo_width">300dp</dimen>
     <dimen name="splash_logo_height">300dp</dimen>
     <dimen name="photo_size_thumb">88dp</dimen>
+    <dimen name="icon_width">90dp</dimen>
+    <dimen name="icon_height">90dp</dimen>
+    <dimen name="toolbar_custom_height">70dp</dimen>
 </resources>
