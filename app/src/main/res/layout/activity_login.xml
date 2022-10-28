@@ -24,7 +24,7 @@
         android:textSize="@dimen/title_login_size"
         android:fontFamily="@font/leaguespartannormal"
         android:textColor="@color/primaryColor"
-        android:layout_marginBottom="@dimen/common_padding_middle"
+        android:paddingVertical="@dimen/common_padding_default"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo"
