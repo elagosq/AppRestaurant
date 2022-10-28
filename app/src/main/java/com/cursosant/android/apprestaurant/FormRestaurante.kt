@@ -6,6 +6,8 @@ import android.text.Editable
 import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.cursosant.android.apprestaurant.databinding.ActivityFormRestauranteBinding
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.delay
@@ -29,7 +31,6 @@ class FormRestaurante : AppCompatActivity() {
         if(id > 0){
             mIsEditMode = true
             getRestaurant(id)
-
         }else{
             mIsEditMode = false
             mRestaurantEntity = RestaurantEntity(name = "", direction = "", phone = "",website = "",urlImg="",description="")
@@ -39,7 +40,6 @@ class FormRestaurante : AppCompatActivity() {
         getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
         getSupportActionBar()?.setTitle(if(mIsEditMode) "Editar Restaurante" else "Crear Restaurante");
         getSupportActionBar()?.setHomeAsUpIndicator(R.drawable.ic_arrow_back)
-        getSupportActionBar()?.setCustomView(R.layout.personalizado_logo)
         getSupportActionBar()?.setDisplayUseLogoEnabled(true)
 
         mBinding.btnRestSave.setText(if(mIsEditMode) "Editar" else "Crear")
@@ -64,6 +64,7 @@ class FormRestaurante : AppCompatActivity() {
             etWebRestaurant.text = restaurant.website.editable()
             etPhotoUrl.text = restaurant.urlImg.editable()
             etDespRest.text = restaurant.description.editable()
+            loadImage(restaurant.urlImg)
         }
     }
 
@@ -120,7 +121,6 @@ class FormRestaurante : AppCompatActivity() {
              return
          } else {
              til_desp_rest.error = ""
-             cleanForm()
          }
 
         if(mRestaurantEntity != null) {
@@ -137,12 +137,11 @@ class FormRestaurante : AppCompatActivity() {
                  if (mIsEditMode) RestaurantApplication.database.restaurantDao().updateRestaurant(mRestaurantEntity!!)
                  else mRestaurantEntity!!.id = RestaurantApplication.database.restaurantDao().addRestaurant(mRestaurantEntity!!)
                 if(mIsEditMode){
-                    //mActivity?.updateRestaurant(mRestaurantEntity!!)
                     Toast.makeText(this@FormRestaurante,R.string.edit_restaurant_message_update_success,Toast.LENGTH_LONG).show()
                     delay(2000L)
                     super.onBackPressed()
                 }else{
-                    //mActivity?.addRestaurant(mRestaurantEntity!!)
+                    cleanForm()
                     Toast.makeText(this@FormRestaurante,R.string.add_restaurant_message_save_success,Toast.LENGTH_LONG).show()
                     delay(2000L)
                     super.onBackPressed()
@@ -150,6 +149,15 @@ class FormRestaurante : AppCompatActivity() {
             }
         }
     }
+
+    private fun loadImage(url: String){
+        Glide.with(this)
+            .load(url)
+            .diskCacheStrategy(DiskCacheStrategy.ALL)
+            .centerCrop()
+            .into(mBinding.imgPhoto)
+    }
+
     fun cleanForm(){
         mBinding.etNombRestaurant.setText("")
         mBinding.etDirRestaurant.setText("")

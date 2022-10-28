@@ -10,4 +10,5 @@
     <dimen name="img_item_map_size">32dp</dimen>
     <dimen name="splash_logo_width">300dp</dimen>
     <dimen name="splash_logo_height">300dp</dimen>
+    <dimen name="photo_size_thumb">88dp</dimen>
 </resources>

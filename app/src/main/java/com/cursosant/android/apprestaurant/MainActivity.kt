@@ -28,7 +28,8 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 
         setSupportActionBar(binding.toolbar)
         getSupportActionBar()?.setTitle("");
-        getSupportActionBar()?.setLogo(R.drawable.icon)
+        //getSupportActionBar()?.setLogo(R.drawable.icon)
+        getSupportActionBar()?.setCustomView(R.layout.personalizado_logo)
         getSupportActionBar()?.setDisplayUseLogoEnabled(true)
 
 
