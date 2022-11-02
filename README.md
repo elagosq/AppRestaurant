@@ -5,36 +5,36 @@
 
 # 1.-SplashScreen
 
-<img src="https://github.com/elagosq/AppRestaurant/blob/master/SplashScreen.png" width="600" height="600" />
+<img src="https://github.com/elagosq/AppRestaurant/blob/master/SplashScreen.png" width="700" height="700" />
 
 # 2.-login
 
-<img src="https://github.com/elagosq/AppRestaurant/blob/master/login.png" width="600" height="600" />
+<img src="https://github.com/elagosq/AppRestaurant/blob/master/login.png" width="700" height="700" />
 
 
 # 3.-Registrar Usuario
 
-<img src="https://github.com/elagosq/AppRestaurant/blob/master/registeruser.png" width="600" height="600" />
+<img src="https://github.com/elagosq/AppRestaurant/blob/master/registeruser.png" width="700" height="700" />
 
 
 # 4.- Inicio
 
-<img src="https://github.com/elagosq/AppRestaurant/blob/master/home.png" width="600" height="600" />
+<img src="https://github.com/elagosq/AppRestaurant/blob/master/home.png" width="700" height="700" />
 
 
 # 5.- Crear Restaurante
 
-<img src="https://github.com/elagosq/AppRestaurant/blob/master/crearrestaurante.png" width="600" height="600" />
+<img src="https://github.com/elagosq/AppRestaurant/blob/master/crearrestaurante.png" width="700" height="700" />
 
 
 # 6.- Detalle Restaurante
 
-<img src="https://github.com/elagosq/AppRestaurant/blob/master/detallerestaurante.png" width="600" height="600" />
+<img src="https://github.com/elagosq/AppRestaurant/blob/master/detallerestaurante.png" width="700" height="700" />
 
 # 7.- Editar Restaurante
 
-<img src="https://github.com/elagosq/AppRestaurant/blob/master/editrestaurante.png" width="600" height="600" />
+<img src="https://github.com/elagosq/AppRestaurant/blob/master/editrestaurante.png" width="700" height="700" />
 
 # 8.- Eliminar Restaurante
 
-<img src="https://github.com/elagosq/AppRestaurant/blob/master/eliminarestaurante.png" width="600" height="600" />
+<img src="https://github.com/elagosq/AppRestaurant/blob/master/eliminarestaurante.png" width="700" height="700" />
